@@ -7,6 +7,6 @@ public class personagemCooperante {
         String nome = "Cooperante";
         boolean insereMoeda = true;
         int qtdMoedaInserida = 1;
-        
+        int pontosCooperante = 0;
     
 }
