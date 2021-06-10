@@ -6,7 +6,15 @@ import java.util.Scanner;
 
 
 public class cenario {
+    
+    public String introducao(){
+        String mensagem;
+        mensagem = "Agora, vamos jogar para valer. Você vai jogar contra 2 oponentes\ndiferentes, cada um com sua própria \"estratégia\" de jogo. Com cada\noponente, você jogará em qualquer lugar entre 3 a 7 rodadas. (Você não\nsaberá com antecedência quando será a última rodada) Você pode confiar neles?\nOu melhor ... eles podem confiar em você? \n";
+    return mensagem;
+    }
  
+    
+    /* se caso precisar escolher o adversário o bloco está aqui
     public int selecionaPersonagem(){
         Scanner entrada = new Scanner(System.in);     
         int idPersonagem = 0;
@@ -27,14 +35,22 @@ public class cenario {
                   }
          } 
     return idPersonagem;
-    }
+    }*/
     
+    //Gera a quantidade de jogadas para a partida
     public int jogadasAleatorias(){ 
         int jogadas = 0;
         Random aleatorio = new Random();
         int valor = aleatorio.nextInt(5);
         jogadas = valor+3;
-        System.out.println(jogadas);
+      //  System.out.println("Partida com "+jogadas + " jogadas");
     return jogadas;
-    }  
+    }
+    
+  /*  public String cabecalho(){
+        System.out.println("OPONENTE: 1 DE 2");
+        System.out.println("SUA PONTUAÇÃO TOTAL:"+totalMoedas.main(totalMoedas));
+        System.out.println("1 - ENGANAÇÃO \n2 - COLABORAR");    
+    }*/
+    
 }
